@@ -4,7 +4,7 @@
 Computer simulaties zijn een belangrijk onderdeel bij natuurkundig onderzoek: wat we niet in het lab kunnen doen, of waar we niet goed aan kunnen meten, kunnen we alsnog bestuderen dankzij simulaties. In deze module leggen we de basis voor natuurkundige computer simulaties en maken we de eerste stappen in ons deeltjes model.
 
 De basis van een goede computer simulatie ligt, net als bij het oplossen van een natuurkundig probleem in een gedegen systematische aanpak. Deze begint vaak met:
-1. Het maken van een tekening van de situatie
+1. Het maken van een tekening van de situatie 
 2. Het noteren van de werkformules
 3. Het aangeven van richtingen en noteren van variabelen. 
 
