@@ -474,9 +474,9 @@ Controleer je eigen antwoord door de functie hierboven even te vervangen door de
 def update(frame):
     particle.update_position()
     dot.set_data([particle.r[0]], [particle.r[1]])
-    if abs(particle.r[0]) > 10:
+    if particle.r[0]**2>100: # Check if particle is outside the bounds, np.abs could be used but is slower
         particle.r[0] = -particle.r[0]
-    elif abs(particle.r[1]) > 10:
+    if particle.r[1]**2>100: # Check if particle is outside the bounds, np.abs could be used but is slower
         particle.r[1] = -particle.r[1]
     return dot,         
 ```
@@ -1088,7 +1088,7 @@ class ParticleClass:
 dt = 0.1         # time step
 num_steps = 530  # number of time steps
 m1 = 1.0
-m2 = 100
+m2 = 50
 
 particleA = ParticleClass(m=m1, v=[0, 0], r=[-4.0, 0.0],R=0.45)  
 particleB = ParticleClass(m=m2, v=[-1, 0], r=[-2.0, 0.0],R=0.45)  
@@ -1167,6 +1167,8 @@ HTML(ani.to_jshtml())
 
 
 print("Total number of collisions:", counter)
+
+num_collisions = counter
 
 ```
 
